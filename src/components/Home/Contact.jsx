@@ -34,7 +34,15 @@ function Contact() {
     const sendEmail = async () => {
         const forbiddenWords = [
             "vanesa",
-            "miras"
+            "vanessa",
+            "duda",
+            "jokowi",
+            "rambo",
+            "judi",
+            "slot",
+            "miras",
+            "budak",
+            "judol"
         ];
 
         const containsForbiddenWord = forbiddenWords.some(word =>

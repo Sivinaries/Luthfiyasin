@@ -55,17 +55,17 @@ function Pesan() {
 
     return (
         <div className="grid grid-cols-1 bg-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 space-y-10 mx-4 xl:mx-20 my-20 md:my-44">
-                <div className="">
+            <div className="md:flex block md:justify-between space-y-10 mx-4 xl:mx-20 my-20 md:my-44">
+                <div className="md:w-1/2 my-auto">
                     <h1 className="text-blue-500 font-extrabold text-3xl text-center md:text-left md:text-7xl">Pengarepan yang Menginspirasi Perubahan Jateng</h1>
                 </div>
-                <div className="w-5/6 mx-auto bg-gray-50 p-4 rounded-xl">
+                <div className="md:w-1/2 mx-auto border p-4 md:p-8 rounded-xl my-auto">
                     {message.length === 0 ? (
                         <p className="text-center">No messages available.</p>
                     ) : (
                         <Slider {...settings}>
                             {message.map((item, index) => (
-                                <div key={index} className="space-y-8">
+                                <div key={index} className="space-y-4 md:space-y-8">
                                     <p className="text-xl font-extralight">"{item.pengarepan}"</p> {/* Display corresponding 'pengarepan' */}
                                     <h1 className="text-xl font-bold">{item.nama}</h1> {/* Display 'nama' */}
                                 </div>
