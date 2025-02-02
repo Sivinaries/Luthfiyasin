@@ -34,7 +34,7 @@ function Peran() {
                 </motion.div>
                 <motion.div {...Motionx}>
                     <div className='md:p-4 p-2 bg-blue-800 hover:scale-125 hover:delay-100 duration-100 rounded-xl px-3 w-fit mx-auto'>
-                        <a className='flex justify-center' href="#contact">
+                        <a className='flex justify-center' href="/contact">
                             <h1 className='text-white text-base md:text-xl font-light my-auto'>Yuk Urun Rembug !</h1>
                             <MdArrowOutward className='text-white w-6 md:w-8 h-6 md:h-8' />
                         </a>

@@ -11,8 +11,8 @@ const Navbar = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     const navLinks = [
-        { title: 'Home', to: '#home' },
-        { title: 'Visi & Misi', to: '#visimisi' },
+        { title: 'Home', to: '/' },
+        { title: 'Visi & Misi', to: '/' },
     ];
 
     useEffect(() => {
@@ -71,7 +71,7 @@ const Navbar = () => {
             {isVisible && (
                 <motion.nav className={`z-50 fixed top-0 right-0 left-0 p-4 xl:p-0 ${isScrollingUp ? 'bg-white' : 'bg-transparent'} transition-all duration-300`}>
                     <div className="flex justify-between items-center">
-                        <a href='#home' className="flex items-center" >
+                        <a href='/' className="flex items-center" >
                             <img className="w-28 h-20 block md:hidden z-50" src={logo} alt="Logo" />
                         </a>
                         {isMobileView ? (
@@ -86,17 +86,17 @@ const Navbar = () => {
                             // Keep the desktop layout as is
                             <div className="hidden md:flex justify-between items-center w-full">
                                 <div className='my-auto w-full md:w-1/3'>
-                                    <a href='#home'>
+                                    <a href='/'>
                                         <h1 className='text-3xl font-normal text-center'>Home</h1>
                                     </a>
                                 </div>
                                 <div className='w-full hidden md:block'>
-                                    <a href='#'>
+                                    <a href='/'>
                                         <img className='mx-auto w-44 h-32' src={logo} alt="Logo" />
                                     </a>
                                 </div>
                                 <div className='my-auto w-full md:w-1/3'>
-                                    <a href='#visimisi'>
+                                    <a href='/'>
                                         <h1 className='text-3xl font-normal text-center'>Visi & Misi</h1>
                                     </a>
                                 </div>
